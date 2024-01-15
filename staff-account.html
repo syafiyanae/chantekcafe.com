@@ -1,0 +1,462 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+
+<!-- Mirrored from tunatheme.com/tf/html/fiama-preview/fiama/account.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 16 Nov 2023 12:26:20 GMT -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Chantek Cake Cafe</title>
+    <meta name="robots" content="noindex, follow" />
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Place favicon.png in the root directory -->
+    <link rel="shortcut icon" href="img/birthday-cake.png" type="image/x-icon" />
+    <!-- Font Icons css -->
+    <link rel="stylesheet" href="css/font-icons.css">
+    <!-- plugins css -->
+    <link rel="stylesheet" href="css/plugins.css">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Responsive css -->
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <!--[if lte IE 9]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+    <![endif]-->
+
+    <!-- Add your site or application content here -->
+
+<!-- Body main wrapper start -->
+<div class="body-wrapper">
+
+    <!-- HEADER AREA START (header-3) -->
+    <header class="ltn__header-area ltn__header-3 section-bg-6">
+        <!-- ltn__header-middle-area start -->
+        <div class="ltn__header-middle-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="site-logo">
+                            <a href="staff-account.html"><img src="img/chanteklogopng.png" alt="Logo" style="width:200px"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ltn__header-middle-area end -->
+    </header>
+    <!-- HEADER AREA END -->
+
+
+    <!-- BREADCRUMB AREA START -->
+    <div class="ltn__breadcrumb-area ltn__breadcrumb-area-4 ltn__breadcrumb-color-white---">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="ltn__breadcrumb-inner text-center">
+                        <h1 class="ltn__page-title">My Staff Account</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- BREADCRUMB AREA END -->
+
+    <!-- WISHLIST AREA START -->
+    <div class="liton__wishlist-area pb-50">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <!-- PRODUCT TAB AREA START -->
+                    <div class="ltn__product-tab-area">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div class="ltn__tab-menu-list mb-50">
+                                        <div class="nav">
+                                            <a class="active show" data-bs-toggle="tab" href="#liton_tab_1_1">Dashboard <i class="fas fa-home"></i></a>
+                                            <a data-bs-toggle="tab" href="#liton_tab_1_2">All Order Status <i class="fas fa-list-alt"></i></a>
+                                            <a data-bs-toggle="tab" href="#liton_tab_1_3">Manage Product <i class="fas fa-cogs"></i></a>
+                                            <a data-bs-toggle="tab" href="#liton_tab_1_5">Account Details <i class="fas fa-user"></i></a>
+                                            <a href="staff-login.html">Logout <i class="fas fa-sign-out-alt"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8">
+                                    <div class="tab-content">
+                                        <div class="tab-pane fade active show" id="liton_tab_1_1">
+                                            <div class="ltn__myaccount-tab-content-inner">
+                                                <p>Hello <strong>Yana</strong> (not <strong>Yana</strong>? <small><a href="login-register.html">Log out</a></small> )</p>
+                                                <!-- GRAPH AREA START -->
+                                                <div id="myChart" style="width:100%; max-width:600px; height:500px;"></div>
+                                                <script>
+                                                    google.charts.load('current', {'packages':['corechart']});
+                                                    google.charts.setOnLoadCallback(drawChart);
+                                                    
+                                                    function drawChart() {
+                                                    
+                                                    // Set Data
+                                                    const data = google.visualization.arrayToDataTable([
+                                                      ['Product', 'Number of product sold'],
+                                                      ['Lemon Luster',11],
+                                                      ['Vanilla Citrus',12],
+                                                      ['Love Velvet',21],
+                                                      ['Blushing Bloom Bliss',6],
+                                                      ['Chocolate Charm Fantasy',9]
+                                                    ]);
+                                                    
+                                                    // Set Options
+                                                    const options = {
+                                                      title:'Top Product Sale'
+                                                    };
+                                                    
+                                                    // Draw
+                                                    const chart = new google.visualization.BarChart(document.getElementById('myChart'));
+                                                    chart.draw(data, options);
+                                                    
+                                                    }
+                                                </script>
+                                                <div id="myChart2" style="width:100%; max-width:600px;"></div>
+                                                <script>
+                                                    google.charts.load('current',{packages:['corechart']});
+                                                    google.charts.setOnLoadCallback(drawChart2);
+                                                    
+                                                    function drawChart2() {
+                                                    
+                                                    // Set Data
+                                                    const data = google.visualization.arrayToDataTable([
+                                                    ['Price', 'Size'],
+                                                    [10,8325.62],[11,9700.50],[12,11900.00]
+                                                    ]);
+                                                    
+                                                    // Set Options
+                                                    const options = {
+                                                    title: 'Sales 2023 4th Quarter',
+                                                    hAxis: {title: 'Months'},
+                                                    vAxis: {title: 'Sales'},
+                                                    legend: 'none'
+                                                    };
+                                                    
+                                                    // Draw
+                                                    const chart = new google.visualization.LineChart(document.getElementById('myChart2'));
+                                                    chart.draw(data, options);
+                                                    
+                                                    }
+                                                </script>
+                                                <!-- GRAPH AREA END -->
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="liton_tab_1_2">
+                                            <div class="ltn__myaccount-tab-content-inner">
+                                                <div class="table-responsive">
+                                                    <table class="table">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Product</th>
+                                                                <th>Cake Name</th>
+                                                                <th>Order Number</th>
+                                                                <th>Date</th>
+                                                                <th>Status</th>                                                             
+                                                                <th>Total</th>
+                                                                <th>Action</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>1</td>
+                                                                <td>Chocolate Delight</td>
+                                                                <td>#12345</td>
+                                                                <td>2024-01-13</td>
+                                                                <td>
+                                                                    <select>
+                                                                        <option value="complete">Complete</option>
+                                                                        <option value="in-process">In Process</option>
+                                                                        <option value="canceled">Canceled</option>
+                                                                    </select>
+                                                                </td>                                                                
+                                                                <td>RM 150.00</td>
+                                                                <td>
+                                                                    <a href="staff-receipt.html" target="_blank">Download Receipt</a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>2</td>
+                                                                <td>Vanilla Bliss</td>
+                                                                <td>#12346</td>
+                                                                <td>2024-01-14</td>
+                                                                <td>
+                                                                    <select>
+                                                                        <option value="complete">Complete</option>
+                                                                        <option value="in-process">In Process</option>
+                                                                        <option value="canceled">Canceled</option>
+                                                                    </select>
+                                                                </td>                                                                
+                                                                <td>RM 170.00</td>
+                                                                <td>
+                                                                    <a href="staff-receipt.html" target="_blank">Download Receipt</a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>3</td>
+                                                                <td>Strawberry Symphony</td>
+                                                                <td>#12347</td>
+                                                                <td>2024-01-15</td>
+                                                                <td>
+                                                                    <select>
+                                                                        <option value="complete">Complete</option>
+                                                                        <option value="in-process">In Process</option>
+                                                                        <option value="canceled">Canceled</option>
+                                                                    </select>
+                                                                </td>                                                                
+                                                                <td>RM 120.50</td>
+                                                                <td>
+                                                                    <a href="staff-receipt.html" target="_blank">Download Receipt</a>
+                                                                </td>
+                                                            </tr>             
+                                                            <tr>
+                                                                <td>4</td>
+                                                                <td>Red Velvet Delight</td>
+                                                                <td>#12348</td>
+                                                                <td>2024-01-16</td>
+                                                                <td>
+                                                                    <select>
+                                                                        <option value="complete">Complete</option>
+                                                                        <option value="in-process">In Process</option>
+                                                                        <option value="canceled">Canceled</option>
+                                                                    </select>
+                                                                </td>
+                                                                <td>RM 135.00</td>
+                                                                <td>
+                                                                    <a href="staff-receipt.html" target="_blank">Download Receipt</a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>5</td>
+                                                                <td>Lemon Zest Extravaganza</td>
+                                                                <td>#12349</td>
+                                                                <td>2024-01-17</td>
+                                                                <td>
+                                                                    <select>
+                                                                        <option value="complete">Complete</option>
+                                                                        <option value="in-process">In Process</option>
+                                                                        <option value="canceled">Canceled</option>
+                                                                    </select>
+                                                                </td>
+                                                                <td>RM 95.00</td>
+                                                                <td>
+                                                                    <a href="staff-receipt.html" target="_blank">Download Receipt</a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>6</td>
+                                                                <td>Caramel Crunch Delight</td>
+                                                                <td>#12350</td>
+                                                                <td>2024-01-18</td>
+                                                                <td>
+                                                                    <select>
+                                                                        <option value="complete">Complete</option>
+                                                                        <option value="in-process">In Process</option>
+                                                                        <option value="canceled">Canceled</option>
+                                                                    </select>
+                                                                </td>
+                                                                <td>RM 180.00</td>
+                                                                <td>
+                                                                    <a href="staff-receipt.html" target="_blank">Download Receipt</a>
+                                                                </td>
+                                                            </tr>                                                                                                      
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="liton_tab_1_3">
+                                            <div class="ltn__myaccount-tab-content-inner">
+                                                <div class="table-responsive">
+                                                    <table class="table">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Order</th>
+                                                                <th>Cake Name</th>
+                                                                <th class="text-center">Quantity</th>
+                                                                <th>Action</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>#1001</td>
+                                                                <td>Chocolate Delight</td>
+                                                                <td class="text-center">
+                                                                    <div class="cart-product-quantity">
+                                                                        <div class="dec qtybutton">-</div>
+                                                                        <input type="text" value="06" name="qtybutton" class="cart-plus-minus-box">
+                                                                        <div class="inc qtybutton">+</div>
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <button>Update</button>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>#1002</td>
+                                                                <td>Vanilla Bliss</td>
+                                                                <td class="text-center">
+                                                                    <div class="cart-product-quantity">
+                                                                        <div class="dec qtybutton">-</div>
+                                                                        <input type="text" value="01" name="qtybutton" class="cart-plus-minus-box">
+                                                                        <div class="inc qtybutton">+</div>
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <button>Update</button>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>#1003</td>
+                                                                <td>Strawberry Symphony</td>
+                                                                <td class="text-center">
+                                                                    <div class="cart-product-quantity">
+                                                                        <div class="dec qtybutton">-</div>
+                                                                        <input type="text" value="02" name="qtybutton" class="cart-plus-minus-box">
+                                                                        <div class="inc qtybutton">+</div>
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <button>Update</button>
+                                                                </td>
+                                                            </tr>                                                                                               
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="liton_tab_1_4">
+                                            <div class="ltn__myaccount-tab-content-inner">
+                                                <p>The following addresses will be used on the checkout page by default.</p>
+                                                <div class="row">
+                                                    <div class="col-md-6 col-12 learts-mb-30">
+                                                        <h4>Billing Address <small><a href="#">edit</a></small></h4>
+                                                        <address>
+                                                            <p><strong>Alex Tuntuni</strong></p>
+                                                            <p>1355 Market St, Suite 900 <br>
+                                                                San Francisco, CA 94103</p>
+                                                            <p>Mobile: (123) 456-7890</p>
+                                                        </address>
+                                                    </div>
+                                                    <div class="col-md-6 col-12 learts-mb-30">
+                                                        <h4>Shipping Address <small><a href="#">edit</a></small></h4>
+                                                        <address>
+                                                            <p><strong>Alex Tuntuni</strong></p>
+                                                            <p>1355 Market St, Suite 900 <br>
+                                                                San Francisco, CA 94103</p>
+                                                            <p>Mobile: (123) 456-7890</p>
+                                                        </address>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="liton_tab_1_5">
+                                            <div class="ltn__myaccount-tab-content-inner mb-50">
+                                                <p>The following addresses will be used on the checkout page by default.</p>
+                                                <div class="ltn__form-box">
+                                                    <form action="#">
+                                                        <div class="row mb-50">
+                                                            <div class="col-md-6">
+                                                                <label>First name:</label>
+                                                                <input type="text" name="ltn__name">
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <label>Last name:</label>
+                                                                <input type="text" name="ltn__lastname">
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <label>Display Name:</label>
+                                                                <input type="text" name="ltn__lastname" placeholder="Yana">
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <label>Display Email:</label>
+                                                                <input type="email" name="ltn__lastname" placeholder="yana1234@gmail.com">
+                                                            </div>
+                                                        </div>
+                                                        <fieldset>
+                                                            <legend>Password change</legend>
+                                                            <div class="row">
+                                                                <div class="col-md-12">
+                                                                    <label>Current password (leave blank to leave unchanged):</label>
+                                                                    <input type="password" name="ltn__name">
+                                                                    <label>New password (leave blank to leave unchanged):</label>
+                                                                    <input type="password" name="ltn__lastname">
+                                                                    <label>Confirm new password:</label>
+                                                                    <input type="password" name="ltn__lastname">
+                                                                </div>
+                                                            </div>
+                                                        </fieldset>
+                                                        <div class="btn-wrapper">
+                                                            <button type="submit" class="btn theme-btn-1 btn-effect-1 text-uppercase">Save Changes</button>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- PRODUCT TAB AREA END -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- WISHLIST AREA START -->
+
+    <!-- FOOTER AREA START -->
+    <footer class="ltn__footer-area ">
+        <div class="ltn__copyright-area ltn__copyright-2 section-bg-5">
+            <div class="container ltn__border-top-2">
+                <div class="row">
+                    <div class="col-md-6 col-12">
+                        <div class="footer-copyright-left">
+                            <div class="ltn__copyright-design clearfix">
+                                <p>&copy; <span class="current-year"></span> All Rights Reserved</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12 align-self-center">
+                        <div class="footer-copyright-right text-right">
+                            <div class="ltn__copyright-menu d-none">
+                                <ul>
+                                    <li><a href="#">Terms & Conditions</a></li>
+                                    <li><a href="#">Claim</a></li>
+                                    <li><a href="#">Privacy & Policy</a></li>
+                                </ul>
+                            </div>
+                            <div class="ltn__social-media ">
+                                <ul>
+                                    <li><a href="https://www.facebook.com/kedaikopichanteksijangkang/?locale=ms_MY" title="Facebook"><i class="icon-social-facebook"></i></a></li>
+                                    <li><a href="https://www.instagram.com/chantekkek.kafe/?hl=en" title="Instagram"><i class="icon-social-instagram"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER AREA END -->
+
+</div>
+<!-- Body main wrapper end -->
+
+    <!-- All JS Plugins -->
+    <script src="js/plugins.js"></script>
+    <!-- Main JS -->
+    <script src="js/main.js"></script>
+
+</body>
+
+<!-- Mirrored from tunatheme.com/tf/html/fiama-preview/fiama/account.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 16 Nov 2023 12:26:21 GMT -->
+</html>
